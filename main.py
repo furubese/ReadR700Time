@@ -78,7 +78,7 @@ if __name__ == '__main__':
     y = Array('f', XMAX*4)
 
     MatPlotProc = Process(target=show_plt, args=(x, y, count, XMAX, TIME,))
-    R700Proc = Process(target=read_R700, args=("http://impinj-14-5a-9f/", writeR700, x, y, count,6000,))
+    R700Proc = Process(target=read_R700, args=("http://impinj-xx-xx-xx/", writeR700, x, y, count,6000,))
     TimeProc = Process(target=time_count, args=(count, TIME,))
 
     TimeProc.start()
